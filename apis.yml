@@ -1,10 +1,21 @@
 aid: phantom-space
 name: Phantom Space
-description: 'Phantom Space is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Phantom Space Corporation is an American space transportation and satellite
+  manufacturing company founded in 2019 and headquartered at 1816 S Research Loop in
+  Tucson, Arizona. Co-founded by Jim Cantrell, Michael D''Angelo and Michal Prywata,
+  it is developing the Daytona family of small-lift orbital launch vehicles — Daytona
+  I, II and III — alongside modular satellite buses, spacecraft manufacturing and
+  constellation deployment services, pursuing a mass-manufacturing, fully US-based
+  supply chain approach to launch and spacecraft production. The company acquired
+  StratSpace and Micro Aerospace Solutions in 2021 to build out its satellite supply
+  chain. Phantom Space sells launch capacity and satellite build programs through
+  direct commercial contracts; it publishes no public developer program, API, SDK or
+  machine-readable specification of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/phantom-space/refs/heads/main/apis.yml
+image: https://phantomspace.com/wp-content/uploads/2024/12/Phantom-Space-Logo-BW-Black-clear.png
 x-type: company
 x-source: harvest:secondary-market
+x-source-url: https://forgeglobal.com/phantom-space_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +23,13 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Space
+- Aerospace
+- Satellites
+- Spacecraft
+- Launch Services
+- Small Satellites
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,53 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/phantom-space-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/phantom-space_stock/
+  url: https://phantomspace.com/
+- type: About
+  url: https://phantomspace.com/about-us/
+- type: Products
+  url: https://phantomspace.com/products/
+- type: Contact
+  url: https://phantomspace.com/contact/
+- type: Careers
+  url: https://phantomspace.bamboohr.com/careers
+- type: Blog
+  name: Phantom News
+  url: https://phantomspace.com/phantom-news/
+- type: BlogFeeds
+  name: Site RSS feed
+  url: https://phantomspace.com/feed/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/phantom-space
+- type: Facebook
+  url: https://www.facebook.com/phantomspace/
+- type: Instagram
+  url: https://www.instagram.com/phantomspaceco/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Phantom Space builds Daytona launch vehicles and satellite buses and sells launch
+    capacity and spacecraft builds by direct contract — its entire public surface is a
+    twelve-page WordPress marketing site where no api./docs./developer. subdomain even
+    resolves in DNS, and the only machine-readable endpoint on the origin is bare
+    WordPress core at /wp-json.
+  evidence:
+  - url: https://phantomspace.com/openapi.json
+    status: 404
+  - url: https://phantomspace.com/.well-known/agent-card.json
+    status: 404
+  - url: https://phantomspace.com/.well-known/security.txt
+    status: 404
+  - url: https://phantomspace.com/llms.txt
+    status: 404
+  - url: https://phantomspace.com/sitemap.xml
+    status: 200
+  checked: '2026-08-05'
