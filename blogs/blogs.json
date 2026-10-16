@@ -2,18 +2,18 @@
   "repo": "phantom-space",
   "feeds": [
     {
-      "source": "https://phantomspace.bamboohr.com/careers",
-      "feed_url": "https://phantomspace.bamboohr.com/careers",
-      "title": "",
-      "saved": 0,
-      "method": "none"
-    },
-    {
       "source": "https://phantomspace.com/phantom-news/",
       "feed_url": "https://phantomspace.com/phantom-news/blog/feed/",
       "title": "",
       "saved": 0,
       "method": "discovered"
+    },
+    {
+      "source": "https://phantomspace.com/feed/",
+      "feed_url": "https://phantomspace.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     },
     {
       "source": "https://phantomspace.com/phantom-news/blog/feed/",
@@ -23,15 +23,15 @@
       "method": "feed"
     },
     {
-      "source": "https://phantomspace.com/feed/",
-      "feed_url": "https://phantomspace.com/feed/",
+      "source": "https://phantomspace.bamboohr.com/careers",
+      "feed_url": "https://phantomspace.bamboohr.com/careers",
       "title": "",
       "saved": 0,
-      "method": "feed"
+      "method": "none"
     }
   ],
   "post_count": 11,
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
   "feed_nature_note": "Whether these posts are the vendor publishing or its support community, decided on the URL path grammar of the saved posts -- not the hostname, which carries both on Khoros, and not author diversity, which flags large vendor blogs as forums. 'undetermined' means undetermined."
